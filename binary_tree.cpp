@@ -1,9 +1,15 @@
+/* 
+
+-------------------------- CUSTOM DATA STRUCTURE - Binary Tree -----------------------------
+__ Created by https://github.com/bravTm
+
+*/
+
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-// CUSTOM DATA STRUCTURE - Binary Tree   ---------------------------------------------------------------
 
 class TreeNode {
 public:
@@ -17,6 +23,7 @@ public:
         right_child = NULL;
     }
 };
+
 
 class BinaryTree {
 private:
@@ -55,6 +62,16 @@ public:
     }
 
 
+    int maxDepth(TreeNode * node){
+        if(!node) return 0;
+
+        int shortWayLeft = maxDepth(node->left_child);
+        int shortWayRight = maxDepth(node->right_child);
+
+        return max(shortWayLeft, shortWayRight) + 1;
+    }
+
+
     void print(TreeNode * node){
         if (!node) return;
         if (node->right_child)
@@ -71,15 +88,19 @@ public:
 int main(){
     BinaryTree tree; 
 
-    tree.insert(20);
-    tree.insert(30);
-    tree.insert(40);
-    tree.insert(23);
-    tree.insert(15);
-    tree.insert(17);
+    tree.insert(3);
+    tree.insert(2);
+    tree.insert(5);
+    tree.insert(1);
+    tree.insert(2);
+    tree.insert(4);
+    tree.insert(7);
+    tree.insert(8);
 
 
     tree.print(tree.root);
+
+    cout << "\n\n" << tree.maxDepth(tree.root) << endl; // 4
 
     return 0;
 }
