@@ -47,6 +47,8 @@ public:
         this->root = NULL;
     }
 
+    ~BinaryTree(){}
+
     void insert(int value){
         TreeNode * ptr = new TreeNode(value);
 
