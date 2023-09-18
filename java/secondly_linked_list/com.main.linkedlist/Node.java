@@ -1,23 +1,23 @@
 package com.main.linkedlist;
 
 public class Node {
-  float value;
-  Node next;
-  Node prev;
+    public float value;
+    public Node next;
+    public Node prev;
 
-  private static int count; // for length 
+    public static int count; // for length
 
-  public class Node(float value){
-    this.value = value;
-    this.next = null;
-    this.prev = null;
+    public Node(float value){
+        this.value = value;
+        this.next = null;
+        this.prev = null;
 
-    count++;
-  }
+        count++;
+    }
 
 
-  public static void decreaseLength(){
-    count--;
-  }
+    public static void decreaseLength(){
+        count--;
+    }
 
 }
