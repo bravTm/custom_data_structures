@@ -1,8 +1,14 @@
+/* 
+
+-------------------------- CUSTOM DATA STRUCTURE in Java - Secondly Linked List -----------------------------
+__ Created by https://github.com/bravTm
+
+*/
+
 import com.main.linkedlist.*;
 
 public class Main {
     public static void main(String[] args){
-
         LinkedList list = new LinkedList();
 
         list.push_front(2);
