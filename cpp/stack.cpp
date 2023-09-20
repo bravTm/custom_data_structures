@@ -1,3 +1,10 @@
+/* 
+
+-------------------------- CUSTOM DATA STRUCTURE - Stack -----------------------------
+__ Created by https://github.com/bravTm
+
+*/
+
 #include <iostream>
 
 using namespace std;
