@@ -1,6 +1,6 @@
 /* 
 
--------------------------- CUSTOM DATA STRUCTURE on Java - Stack  -----------------------------
+-------------------------- CUSTOM DATA STRUCTURE in Java - Stack  -----------------------------
 __ Created by https://github.com/bravTm
 
 */
